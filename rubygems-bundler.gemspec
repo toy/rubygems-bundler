@@ -4,7 +4,7 @@
 Kernel.load File.expand_path("../lib/rubygems-bundler/version.rb", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "rubygems-bundler"
+  s.name        = "toy-rubygems-bundler"
   s.version     = RubygemsBundler::VERSION
   s.authors     = ["Josh Hull", "Michal Papis"]
   s.email       = ["joshbuddy@gmail.com", "mpapis@gmail.com"]
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
 
   s.add_dependency "bundler-unload", ">=1.0.2"
-  s.add_dependency "executable-hooks", ">=1.5.0"
+  s.add_dependency "toy-executable-hooks", ">=1.6.2.1"
   s.add_development_dependency "tf"
   #s.add_development_dependency "smf-gem"
 end
